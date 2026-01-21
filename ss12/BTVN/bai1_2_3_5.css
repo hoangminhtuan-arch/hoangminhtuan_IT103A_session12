@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #F8F9FA;
+}
+header{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: rgba(145, 98, 254, 0.715);
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a{
+   padding: 5px 20px;
+   text-decoration: none;
+    font-size: large;
+    color: black;
+}
+nav button{
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border: 0px solid;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+nav button:hover{
+    cursor: pointer;
+}
+header div{
+    display: none;
+}
+/* ============================ */
+.lesson{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5%;
+    width: 100%;
+}
+.size_title{
+    font-size: 40px;
+}
+.lesson_box{
+    display: flex;
+    width: 80%;
+    gap: 20px;
+}
+.inner_box{
+    width: 48%;
+    height: 60%;
+    background: white;
+    transition: all 0.3s ease;
+    padding-bottom: 20px;
+}
+.pic{
+    display: flex;
+    height: 180px;
+    width: 100%;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+.pic i{
+    font-size: 40px;
+}
+.pic p{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: small;
+}
+.text_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 0px;
+    font-size: x-small;
+}
+.move{
+    transform: translateY(-7px);
+    color: rgba(68, 68, 68, 0.433);
+}
+.space{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+}
+.space h2{
+    color: blueviolet;
+}
+.space button{
+    background-color: rgb(52, 52, 255);
+    color: white;
+    border: 0px solid;
+    padding: 5px;
+}
+.purple{
+    background-color: #dedffc9f;
+    color: rgba(137, 43, 226, 0.63);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: smaller;
+}
+.border_bot{
+    color: rgba(68, 68, 68, 0.433);
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.inner_box:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+#star{
+    color: gold;
+}
+/* ======================================= */
+.price{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.price u{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.text_box2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 0px;
+    border-top: 1px solid rgba(162, 162, 162, 0.258);
+}
+#check{
+    color: green;
+}
+.button{
+    background-color: white;
+    color: rgb(52, 52, 255);
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 10px;
+}
+.square_box{
+    border-radius: 10px;
+}
+.Pro{
+    border: 2px solid blueviolet;
+    transform: scale(1.02);
+}
+.proB{
+    background-color: rgb(52, 52, 255);
+    color: white;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 10px;
+}
+/* ================================= */
+.container{
+    background-color: white;    
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+    margin-top: 50px;
+}
+.contain div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.highlight{
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width:768px){
+    nav{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    header div{
+        display: inline-block;
+    }
+    .lesson_box{
+        flex-wrap: wrap;
+    }
+    .contain{
+        width: 80%;
+    }
+}
